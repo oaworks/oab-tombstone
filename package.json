@@ -1,0 +1,20 @@
+{
+  "name": "instantill-tombstone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.0",
+    "autoprefixer": "^10.4.21",
+    "nunjucks": "^3.2.4",
+    "postcss": "^8.5.4",
+    "tailwindcss": "^4.1.8"
+  },
+  "description": ""
+}
