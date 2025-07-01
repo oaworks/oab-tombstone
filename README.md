@@ -15,6 +15,7 @@ npm install
 
 # run local server at http://localhost:8080
 npm start
+```
 
 ## Legacy InstantILL `embed.js` file
 
