@@ -1,6 +1,6 @@
-# InstantILL Tombstone Page
+# Open Access Button Tombstone Page
 
-An Eleventy one-pager announcing that **InstantILL is no longer available**, with relevant redirects. Static and deployed on Netlify.
+An Eleventy one-pager announcing that **Open Access Button is no longer available**, with relevant redirects. Static and deployed on Netlify.
 
 ## Requirements 
 
