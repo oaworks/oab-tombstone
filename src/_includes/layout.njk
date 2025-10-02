@@ -31,10 +31,10 @@
   <!-- Preload the bg image -->
   <link rel="preload" as="image"
     imagesrcset="
-      /.netlify/images?url=/static/book.jpg&fit=cover&w=640&q=60   640w,
-      /.netlify/images?url=/static/book.jpg&fit=cover&w=1024&q=60 1024w,
-      /.netlify/images?url=/static/book.jpg&fit=cover&w=1600&q=60 1600w,
-      /.netlify/images?url=/static/book.jpg&fit=cover&w=1920&q=60 1920w"
+      /.netlify/images?url=book.jpg&fit=cover&w=640&q=60   640w,
+      /.netlify/images?url=book.jpg&fit=cover&w=1024&q=60 1024w,
+      /.netlify/images?url=book.jpg&fit=cover&w=1600&q=60 1600w,
+      /.netlify/images?url=book.jpg&fit=cover&w=1920&q=60 1920w"
     imagesizes="100vw">
   
   <title>{{ title }}</title>
@@ -43,16 +43,16 @@
     /* Define the 'books' bg image, sized per viewport */
     :root{
       /* mobile default */
-      --hero-bg: url("/.netlify/images?url=/static/book.jpg&fit=cover&w=640&q=60");
+      --hero-bg: url("/.netlify/images?url=book.jpg&fit=cover&w=640&q=60");
     }
     @media (min-width: 768px){
-      :root{ --hero-bg: url("/.netlify/images?url=/static/book.jpg&fit=cover&w=1024&q=60"); }
+      :root{ --hero-bg: url("/.netlify/images?url=book.jpg&fit=cover&w=1024&q=60"); }
     }
     @media (min-width: 1280px){
-      :root{ --hero-bg: url("/.netlify/images?url=/static/book.jpg&fit=cover&w=1600&q=60"); }
+      :root{ --hero-bg: url("/.netlify/images?url=book.jpg&fit=cover&w=1600&q=60"); }
     }
     @media (min-width: 1536px){
-      :root{ --hero-bg: url("/.netlify/images?url=/static/book.jpg&fit=cover&w=1920&q=60"); }
+      :root{ --hero-bg: url("/.netlify/images?url=book.jpg&fit=cover&w=1920&q=60"); }
     }
 
     body{
