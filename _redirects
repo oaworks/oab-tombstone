@@ -1,6 +1,9 @@
 # Force HTTPS 
 http://*     https://:splat   301!
 
+# Redirect legacy SYP setup page to correct shareyourpaper.org site 
+/shareyourpaper/setup  https://shareyourpaper.org/libraries 301!
+
 # Keep essential assets accessible (for now)
 /embed.js    /embed.js        200
 
