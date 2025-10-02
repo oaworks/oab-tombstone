@@ -27,9 +27,47 @@
   <noscript><img src="https://sa.instantill.org/noscript.gif" alt=""></noscript>
 
   <link rel="icon" href="/favicon.ico" />
+
+  <!-- Preload the bg image -->
+  <link rel="preload" as="image"
+    imagesrcset="
+      /.netlify/images?url=/static/book.jpg&fit=cover&w=640&q=60   640w,
+      /.netlify/images?url=/static/book.jpg&fit=cover&w=1024&q=60 1024w,
+      /.netlify/images?url=/static/book.jpg&fit=cover&w=1600&q=60 1600w,
+      /.netlify/images?url=/static/book.jpg&fit=cover&w=1920&q=60 1920w"
+    imagesizes="100vw">
+  
   <title>{{ title }}</title>
+
+  <style>
+    /* Define the 'books' bg image, sized per viewport */
+    :root{
+      /* mobile default */
+      --hero-bg: url("/.netlify/images?url=/static/book.jpg&fit=cover&w=640&q=60");
+    }
+    @media (min-width: 768px){
+      :root{ --hero-bg: url("/.netlify/images?url=/static/book.jpg&fit=cover&w=1024&q=60"); }
+    }
+    @media (min-width: 1280px){
+      :root{ --hero-bg: url("/.netlify/images?url=/static/book.jpg&fit=cover&w=1600&q=60"); }
+    }
+    @media (min-width: 1536px){
+      :root{ --hero-bg: url("/.netlify/images?url=/static/book.jpg&fit=cover&w=1920&q=60"); }
+    }
+
+    body{
+      background-image: var(--hero-bg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-color: #f4f4f4;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
 </head>
-<body class="font-sans text-black flex flex-col min-h-screen antialiased bg-[url('book.jpg')] bg-no-repeat bg-cover bg-center">
+<body class="font-sans text-black flex flex-col min-h-screen antialiased bg-no-repeat bg-cover bg-center">
 
   <header class="bg-[#428BCA] text-white text-center text-sm tracking-widest py-8 px-4">
     <strong><a href="/" class="hover:underline">Open Access Button</a></strong>
