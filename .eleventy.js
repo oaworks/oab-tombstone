@@ -4,6 +4,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/icon_OAB.png": "icon_OAB.png" });
   eleventyConfig.addPassthroughCopy({ "src/book.jpg": "book.jpg" });
   eleventyConfig.addPassthroughCopy({ "src/book.jpg": "book.jpg" });
+  eleventyConfig.addPassthroughCopy({ "src/static": "static" });
   
   return {
     dir: {
