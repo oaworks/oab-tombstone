@@ -42,8 +42,13 @@
   <style>
     /* Define the 'books' bg image, sized per viewport */
     :root{
-      /* mobile default */
-      --hero-bg: url("/.netlify/images?url=book.jpg&fit=cover&w=640&q=60");
+      --hero-bg: url("/book.jpg");
+    }
+
+    /* Override with Netlify-optimised versions in production */
+    {% if usingNetlify %}
+    @media (min-width: 0px){
+      :root{ --hero-bg: url("/.netlify/images?url=book.jpg&fit=cover&w=640&q=60"); }
     }
     @media (min-width: 768px){
       :root{ --hero-bg: url("/.netlify/images?url=book.jpg&fit=cover&w=1024&q=60"); }
@@ -54,6 +59,7 @@
     @media (min-width: 1536px){
       :root{ --hero-bg: url("/.netlify/images?url=book.jpg&fit=cover&w=1920&q=60"); }
     }
+    {% endif %}
 
     body{
       background-image: var(--hero-bg);
@@ -66,6 +72,7 @@
       flex-direction: column;
     }
   </style>
+
 </head>
 <body class="font-sans text-black flex flex-col min-h-screen antialiased bg-no-repeat bg-cover bg-center">
 
