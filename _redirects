@@ -1,13 +1,7 @@
-# Force HTTPS
-http://*                              https://:splat                     301!
-
 # Keep essential assets and pages accessible
 /feedback/*                           /feedback/:splat                   200
 /static/test/*                        /static/test/:splat                200
 /static/openaccessbutton_widget.js    /static/openaccessbutton_widget.js 200
 
-# Catch-all: prefer a hard redirect to the homepage
-/*                                    /                                  301!
-
-# Fallback rewrite to prevent any remaining 404s
-/*                                    /index.html                        200
+# REDIRECT everything else to the homepage
+/*               /                301!
