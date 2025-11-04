@@ -1,19 +1,10 @@
 # Force HTTPS 
 http://*                    https://:splat   301!
 
-# Redirect legacy SYP pages to correct shareyourpaper.org site 
-/shareyourpaper/setup      https://shareyourpaper.org/libraries  301!
-/shareyourpaper/setup/*    https://shareyourpaper.org/libraries  301!
-/deposit                   https://shareyourpaper.org  301!
-/permissions               https://shareyourpaper.org  301!
-/shareyourpaper.org        https://shareyourpaper.org  301!
-
-# Redirect legacy InstantILL setup page to InstantILL’s tombstone 
-/instantill/setup          https://instantill.org  301!
-/instantill/setup/*        https://instantill.org  301!
-
-# Keep essential assets accessible (for now)
-/embed.js                  /embed.js        200
+# Keep essential assets and pages accessible
+/feedback                   /feedback        200
+/static/test                /static/test     200
+/static/openaccessbutton_widget.js  /static/openaccessbutton_widget.js  200
 
 # Send every other path (secondary page) to the tombstone homepage
 /*                         /                301!
