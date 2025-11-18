@@ -1,5 +1,13 @@
 # Keep essential assets and pages accessible
 /instructions                         /feedback/                         200
+/request                              /                                  200
+/request/*                            /                                  200
+/account                              /                                  200
+/about                                /                                  200
+/deposit                              /                                  200
+/direct2aam                           /                                  200
+/api                                  /                                  200
+/getpdf                               /                                  200
 /feedback/*                           /feedback/:splat                   200
 /static/test/*                        /static/test/:splat                200
 /static/openaccessbutton_widget.js    /static/openaccessbutton_widget.js 200
