@@ -8,6 +8,9 @@
 /direct2aam                           /                                  200
 /api                                  /                                  200
 /getpdf                               /                                  200
+/embedoa                              /                                  200
+/resources                            /                                  200
+/find                                 /                                  200
 /feedback/*                           /feedback/:splat                   200
 /static/test/*                        /static/test/:splat                200
 /static/openaccessbutton_widget.js    /static/openaccessbutton_widget.js 200
