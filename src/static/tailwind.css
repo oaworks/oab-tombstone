@@ -28,6 +28,7 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
 .max-w-\[75ch\]{max-width:75ch}
 
 /* Spacing */
+.p-6{padding:1.5rem} /* NEW: for the aside panel */
 .px-1{padding-left:0.25rem;padding-right:0.25rem}
 .px-4{padding-left:1rem;padding-right:1rem}
 .px-5{padding-left:1.25rem;padding-right:1.25rem}
@@ -51,6 +52,8 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
 .h-20{height:5rem}
 
 /* Typography */
+.font-sans{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif} /* NEW: body class */
+.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}             /* NEW: body class */
 .text-sm{font-size:.875rem;line-height:1.25rem}
 .text-base{font-size:1rem;line-height:1.5rem}
 .text-lg{font-size:1.125rem;line-height:1.75rem}
@@ -64,6 +67,9 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
 .text-left{text-align:left}
 .text-black{color:#000}
 .text-white{color:#fff}
+
+/* Display helpers */
+.inline-block{display:inline-block} /* NEW: for the CTA button */
 
 /* Colours (OA.Works palette) */
 .bg-\[\#428BCA\]{background-color:#428BCA}
@@ -98,7 +104,8 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
 
 /* Responsive (only what’s used) */
 @media (min-width:1024px){
-  .lg\:grid{display:grid;grid-template-columns:minmax(0,1fr)22rem;align-items:flex-start;gap:3rem}
+  .lg\:grid{display:grid;grid-template-columns:minmax(0,1fr) 22rem;align-items:flex-start;gap:3rem}
+  .lg\:grid-cols-\[minmax\(0,1fr\)_22rem\]{grid-template-columns:minmax(0,1fr) 22rem}
   .lg\:items-start{align-items:flex-start}
   .lg\:gap-12{gap:3rem}
   .lg\:text-left{text-align:left}
@@ -111,6 +118,11 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
   .lg\:top-24{top:6rem}
   .lg\:self-start{align-self:flex-start}
 }
+
 @media (min-width:1280px){
   .xl\:max-w-screen-xl{max-width:1280px}
+}
+
+@media (min-width:1536px){
+  .\32 xl\:max-w-\[1100px\]{max-width:1100px}
 }
