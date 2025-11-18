@@ -1,4 +1,5 @@
 # Keep essential assets and pages accessible
+/instructions                         /feedback/                         200
 /feedback/*                           /feedback/:splat                   200
 /static/test/*                        /static/test/:splat                200
 /static/openaccessbutton_widget.js    /static/openaccessbutton_widget.js 200
