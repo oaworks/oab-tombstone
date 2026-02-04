@@ -1,4 +1,8 @@
 # Keep essential assets and pages accessible
+/setup                                /                                  301
+/setup/                               /                                  301
+/demo                                 /                                  301
+/demo/                                /                                  301
 /instructions                         /feedback/                         200
 /instructions/ /feedback/ 200
 /request                              /                                  200
